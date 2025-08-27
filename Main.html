@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+    <title>Art by Felix</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+        }
+
+        .bg-hero {
+            background-image: url('https://images.unsplash.com/photo-1593026338221-10a18f6f6990?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .bg-gradient-radial {
+            background: radial-gradient(circle, rgba(234, 88, 12, 0.15) 0%, rgba(10, 10, 10, 0) 60%);
+        }
+    </style>
+</head>
+
+<body class="bg-hero">
+    <div class="min-h-screen bg-black bg-opacity-70 flex flex-col">
+        <header class="container mx-auto px-6 py-6">
+            <nav class="flex items-center justify-between">
+                <a class="text-2xl font-bold text-white" href="#">Art by Felix</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a class="text-gray-300 hover:text-white" href="#">Inicio</a>
+                    <a class="text-gray-300 hover:text-white" href="#">Galería Tatuajes</a>
+                    <a class="text-gray-300 hover:text-white" href="#">Camisetas</a>
+                    <a class="text-gray-300 hover:text-white" href="#">Cuadros</a>
+                    <a class="text-gray-300 hover:text-white" href="#">Reseñas</a>
+                    <a class="text-gray-300 hover:text-white" href="#">Contacto</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="relative">
+                        <i class="material-icons text-gray-300">shopping_cart</i>
+                        <span
+                            class="absolute -top-2 -right-2 bg-orange-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">2</span>
+                    </button>
+                    <button class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-md">
+                        Iniciar Sesión
+                    </button>
+                </div>
+            </nav>
+        </header>
+        <main class="flex-grow container mx-auto px-6 flex items-center">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="text-white">
+                    <h1 class="text-6xl font-bold mb-4">Félix Carmona</h1>
+                    <h2 class="text-4xl font-semibold mb-6">Biografía</h2>
+                    <p class="mb-4 text-gray-300">
+                        Artista del tatuaje con más de 10 años de experiencia creando obras únicas que combinan técnicas
+                        tradicionales y modernas. Especializado en realismo, blackwork y diseños personalizados que
+                        cuentan tu historia.
+                    </p>
+                    <p class="text-gray-300 mb-8">
+                        Cada trazo es una expresión de arte permanente. Mi pasión es transformar ideas en obras maestras
+                        que acompañarán tu piel para toda la vida. Desde diseños minimalistas hasta piezas elaboradas,
+                        cada tatuaje es una colaboración única entre artista y cliente.
+                    </p>
+                    <div class="flex space-x-4">
+                        <button class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-md">
+                            Ver Galería
+                        </button>
+                        <button class="bg-gray-800 hover:bg-gray-700 text-white font-semibold py-3 px-6 rounded-md">
+                            Agendar Cita
+                        </button>
+                    </div>
+                </div>
+                <div class="relative flex justify-center items-center bg-gradient-radial">
+                    <img alt="Retrato de Félix Carmona" class="rounded-lg shadow-2xl z-10 w-full max-w-sm"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-zelQv2o2MaH68vWY1tJXG51iihHtTdoGWTWeEYfE5lSkDLIMimbc9n86VNis_ihORFqLHPJxWXhYXPD3h1ZAo-i7AgSoAKuVIY8RpdBqYdXRzZP96_csByWufimnDlQHRLuHR2h4N4zTDUjPbnvk3K5GCMpfkGmvzQy4oLiF-pD-IFp4QPrIru0rG3gTC70rUn9GD1rccx6G6gD6cg4NwR611BpAwa21jD696pStHJGOT9_elKzptjBUmOHbhHWGQUro_lqEqH6a" />
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Agrega aquí las secciones de Categorías y Reseñas antes del footer -->
+    <section class="container mx-auto px-4 py-16">
+        <section class="text-center mb-16">
+            <h2 class="text-3xl font-bold mb-4">Categorías</h2>
+            <p class="text-gray-400 max-w-2xl mx-auto">
+                Elige un trabajo de diferentes medios artísticos. Cada categoría tiene un estilo y una complejidad
+                diferentes.
+            </p>
+        </section>
+        <section class="grid md:grid-cols-3 gap-8 mb-24">
+            <div class="relative group rounded-lg overflow-hidden">
+                <img alt="Painting of a woman with flowers"
+                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNk0Kj6jKqOrTca2W0es1Fqu-_sSkvs9-XaWVfjJbM-7GGL9zm2x_-aO4jRArjlkhD8uPagm5zAt4nTmb-jAVPn6oFXmr0BdutuQtZoTjR2lD6IAAiDJCPeveAdUP5-H1bVpFVGzazBggHFT4zCFBrgg5-bcFRJ-GM05qpzL-TL5QmIwe_XCU0xsqXHHEPUPTn9TuPe6k_5PmY09tnD0bOIDmKrgWPhGz-gYpqKX7-FRXNAqKaNKnGveDqGgt79HN0ofOmEfRdxA" />
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-2xl font-semibold mb-2">Cuadros</h3>
+                    <button
+                        class="border border-white text-white px-4 py-2 rounded-md text-sm hover:bg-white hover:text-black transition-colors">Comprar</button>
+                </div>
+            </div>
+            <div class="relative group rounded-lg overflow-hidden">
+                <img alt="Artist's studio with a painting on an easel"
+                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-iK9aslgZj2vwFXzqTLKHXVQHys3-cMI-AzmjV5gNv2t_nMze8eS7rhxALS4rkiFEAR0ACe4cT8-TGRf2vTFpItlW6SSdxyNbAV_QStl0SsTcjkJpe3TWGXbKmW2qA6z_tBY7rbScgzw5mZJ3MivTRTR9uE9mnLRQtLuWbINnIYOwkyRS0QyAc10WzCNKiUNZbJ2FebnfLP1sDkID8vuoF-WkbbvzGtEFOiQp5gvU0PX5lXsoyhtNPRXLQjWcjr70K6SmW-0kWA" />
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-2xl font-semibold mb-2">Lienzos</h3>
+                    <button
+                        class="border border-white text-white px-4 py-2 rounded-md text-sm hover:bg-white hover:text-black transition-colors">Comprar</button>
+                </div>
+            </div>
+            <div class="relative group rounded-lg overflow-hidden">
+                <img alt="Close-up of a person's hands drawing a portrait"
+                    class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAs9hD03VqW4653PlSm59fom-GAmczNm0PEbj91CxFkzRXNjwZzZ0MNVokHNAF8WJdKN2NHty7OWVTutiWhUzDBd2SbR9VmC1Tq-sBp5z3cgf7681JQ65S52SJ98vdnmHEB_sPa2Nkz6NHxqagxgf1xS5gv7rQxIW5FGeVzU4DlFzVc3p22xs1KtXavYb1c60QYSSrWo_mR2S081tWu9bR5VEzu00RL6VR077LoRffYTulIowvDQ-EzRDStJCnIbbdmN2XFgr__yA" />
+                <div class="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center p-4">
+                    <h3 class="text-2xl font-semibold mb-2">Caricaturas</h3>
+                    <button
+                        class="border border-white text-white px-4 py-2 rounded-md text-sm hover:bg-white hover:text-black transition-colors">Comprar</button>
+                </div>
+            </div>
+        </section>
+        <section class="mb-16">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold mb-4">Reseñas</h2>
+                <p class="text-gray-400">Lo que dicen los clientes sobre mi trabajo</p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-900 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-custom-orange">
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                        </div>
+                    </div>
+                    <h4 class="font-semibold mb-2">María Gonzalez</h4>
+                    <p class="text-gray-400 text-sm">"¡Un trabajo increíble! El nivel de detalle es impresionante. Muy
+                        profesional y entregado a tiempo."</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-custom-orange">
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star_border</span>
+                        </div>
+                    </div>
+                    <h4 class="font-semibold mb-2">Carlos Rodriguez</h4>
+                    <p class="text-gray-400 text-sm">"Excelente comunicación durante todo el proceso. El cuadro es aún
+                        más bonito en persona."</p>
+                </div>
+                <div class="bg-gray-900 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="flex text-custom-orange">
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                            <span class="material-icons">star</span>
+                        </div>
+                    </div>
+                    <h4 class="font-semibold mb-2">Ana Pérez</h4>
+                    <p class="text-gray-400 text-sm">"Recomiendo totalmente a este artista. Capturó perfectamente la
+                        esencia de lo que quería."</p>
+                </div>
+            </div>
+            <div class="text-center mt-8">
+                <a class="text-custom-orange hover:underline" href="#">Ver más reseñas</a>
+            </div>
+        </section>
+    </section>
+    <footer class="bg-black py-12">
+        <div class="container mx-auto px-4 grid md:grid-cols-4 gap-8 text-gray-400">
+            <div>
+                <h3 class="text-white font-semibold mb-4">Art by Felix</h3>
+                <p class="text-sm">Creando piezas de arte únicas con pasión y dedicación. Cada obra cuenta una historia.
+                </p>
+            </div>
+            <div>
+                <h3 class="text-white font-semibold mb-4">Navegación</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><a class="hover:text-custom-orange" href="#">Inicio</a></li>
+                    <li><a class="hover:text-custom-orange" href="#">Galería</a></li>
+                    <li><a class="hover:text-custom-orange" href="#">Sobre nosotros</a></li>
+                    <li><a class="hover:text-custom-orange" href="#">Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-semibold mb-4">Contacto</h3>
+                <ul class="space-y-2 text-sm">
+                    <li><span class="material-icons align-middle text-sm mr-2">phone</span>+1 (123) 456-7890</li>
+                    <li><span class="material-icons align-middle text-sm mr-2">email</span>artbyfelix@example.com</li>
+                    <li><span class="material-icons align-middle text-sm mr-2">location_on</span>Miami, FL</li>
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-white font-semibold mb-4">Sígueme</h3>
+                <div class="flex space-x-4">
+                    <a class="hover:text-custom-orange" href="#"><svg aria-hidden="true" class="w-6 h-6"
+                            fill="currentColor" viewBox="0 0 24 24">
+                            <path clip-rule="evenodd"
+                                d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                                fill-rule="evenodd"></path>
+                        </svg></a>
+                    <a class="hover:text-custom-orange" href="#"><svg aria-hidden="true" class="w-6 h-6"
+                            fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84">
+                            </path>
+                        </svg></a>
+                    <a class="hover:text-custom-orange" href="#"><svg aria-hidden="true" class="w-6 h-6"
+                            fill="currentColor" viewBox="0 0 24 24">
+                            <path clip-rule="evenodd"
+                                d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.08 2.525c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zM12 7a5 5 0 100 10 5 5 0 000-10zm0-2a7 7 0 110 14 7 7 0 010-14zm6.406-2.34a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z"
+                                fill-rule="evenodd"></path>
+                        </svg></a>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 mt-8 border-t border-gray-800 pt-6 text-center text-sm text-gray-500">
+            <p>© 2023 Art by Felix. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
