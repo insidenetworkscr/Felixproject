@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Tatuajes - Art by Felix</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/galery.css">
+       
+
+
+    
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav class="flex items-center justify-between">
+                <a class="text-2xl font-bold text-white" href="#">Art by Felix</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a class="text-gray-300 hover:text-white" href="#">Inicio</a>
+                    <a class="text-gray-300 hover:text-white" href="#">Galería Tatuajes</a>
+                    <a class="text-gray-300 hover:text-white" href="#">Camisetas</a>
+                    <a class="text-gray-300 hover:text-white" href="#">Cuadros</a>
+                    <a class="text-gray-300 hover:text-white" href="#">Reseñas</a>
+                    <a class="text-gray-300 hover:text-white" href="#">Contacto</a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="relative">
+                        <i class="material-icons text-gray-300">shopping_cart</i>
+                        <span class="absolute -top-2 -right-2 bg-orange-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
+                    </button>
+                    <button class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-md">
+                        Iniciar Sesión
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gallery">
+        <div class="container hero-content">
+            <h1>Galería de Tatuajes</h1>
+            <p>Explora los diferentes estilos y técnicas que Felix domina. Desde el tradicional japonés hasta el realismo más detallado.</p>
+        </div>
+    </section>
+
+    <!-- Filtros -->
+    <div class="container">
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="japones">Japonés</button>
+            <button class="filter-btn" data-filter="realista">Realista</button>
+            <button class="filter-btn" data-filter="geometrico">Geométrico</button>
+            <button class="filter-btn" data-filter="biomecanico">Biomecánico</button>
+            <button class="filter-btn" data-filter="blackwork">Blackwork</button>
+            <button class="filter-btn" data-filter="traditional">Tradicional</button>
+            <button class="filter-btn" data-filter="dotwork">Dotwork</button>
+        </div>
+    </div>
+
+    <!-- Galería -->
+    <section class="gallery">
+        <div class="container">
+            <div class="gallery-grid" id="gallery-grid">
+                <!-- Tatuaje 1 - Japonés -->
+                <div class="gallery-item" data-category="japones">
+                    <img src="https://www.madeinkbilbao.com/wp-content/uploads/2024/12/tatuaje-japones07.jpg" alt="Tatuaje estilo japonés" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Japonés</span>
+                        <h3 class="gallery-title">Dragón y Flor de Cerezo</h3>
+                        <p class="gallery-description">Tatuaje inspirado en la mitología japonesa que combina la fuerza del dragón con la belleza efímera de la flor de cerezo.</p>
+                        <div class="gallery-actions">
+                            <button class="action-btn view-details" data-id="1">
+                                <i class="material-icons">visibility</i> Ver detalles
+                            </button>
+                            <button class="action-btn">
+                                <i class="material-icons">favorite_border</i> Guardar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tatuaje 2 - Realista -->
+                <div class="gallery-item" data-category="realista">
+                    <img src="https://danielsangil.com/wp-content/uploads/2023/03/001.gif_0016_IMG_7210.jpg" alt="Tatuaje realista" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Realista</span>
+                        <h3 class="gallery-title">Retrato en Blanco y Negro</h3>
+                        <p class="gallery-description">Retrato hiperrealista con sombras y detalles precisos que capturan la esencia y expresión del personaje.</p>
+                        <div class="gallery-actions">
+                            <button class="action-btn view-details" data-id="2">
+                                <i class="material-icons">visibility</i> Ver detalles
+                            </button>
+                            <button class="action-btn">
+                                <i class="material-icons">favorite_border</i> Guardar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tatuaje 3 - Biomecánico -->
+                <div class="gallery-item" data-category="biomecanico">
+                    <img src="https://tattoox.es/wp-content/uploads/2023/04/tatuajes-biomecanicos-18.jpg" alt="Tatuaje biomecánico" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Biomecánico</span>
+                        <h3 class="gallery-title">Máquina Orgánica</h3>
+                        <p class="gallery-description">Fusión entre elementos mecánicos y orgánicos creando la ilusión de tecnología integrada en la carne.</p>
+                        <div class="gallery-actions">
+                            <button class="action-btn view-details" data-id="3">
+                                <i class="material-icons">visibility</i> Ver detalles
+                            </button>
+                            <button class="action-btn">
+                                <i class="material-icons">favorite_border</i> Guardar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tatuaje 4 - Geométrico -->
+                <div class="gallery-item" data-category="geometrico">
+                    <img src="https://i.redd.it/7dzhxib1zn8e1.jpeg" alt="Tatuaje geométrico" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Geométrico</span>
+                        <h3 class="gallery-title">Patrones Sagrados</h3>
+                        <p class="gallery-description">Diseño basado en geometría sagrada con mandalas y patrones simétricos que representan armonía y equilibrio.</p>
+                        <div class="gallery-actions">
+                            <button class="action-btn view-details" data-id="4">
+                                <i class="material-icons">visibility</i> Ver detalles
+                            </button>
+                            <button class="action-btn">
+                                <i class="material-icons">favorite_border</i> Guardar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tatuaje 5 - Blackwork -->
+                <div class="gallery-item" data-category="blackwork">
+                    <img src="https://i.pinimg.com/736x/6b/60/f7/6b60f7c3611bb3d939ed5ee67a27f973.jpg" alt="Tatuaje blackwork" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Blackwork</span>
+                        <h3 class="gallery-title">Siluetas Tribal</h3>
+                        <p class="gallery-description">Patrones tribales modernos con áreas sólidas de tinta negra que crean contrastes intensos y diseños audaces.</p>
+                        <div class="gallery-actions">
+                            <button class="action-btn view-details" data-id="5">
+                                <i class="material-icons">visibility</i> Ver detalles
+                            </button>
+                            <button class="action-btn">
+                                <i class="material-icons">favorite_border</i> Guardar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tatuaje 6 - Tradicional -->
+                <div class="gallery-item" data-category="traditional">
+                    <img src="https://www.esdip.com/wp-content/uploads/2022/12/tatuaje-tradicional_mujer-y-calavera_tamy-love.jpg" alt="Tatuaje tradicional" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Tradicional</span>
+                        <h3 class="gallery-title">Golondrina y Rosa</h3>
+                        <p class="gallery-description">Clásico diseño de tatuaje tradicional americano con líneas gruesas y colores vibrantes que perduran en el tiempo.</p>
+                        <div class="gallery-actions">
+                            <button class="action-btn view-details" data-id="6">
+                                <i class="material-icons">visibility</i> Ver detalles
+                            </button>
+                            <button class="action-btn">
+                                <i class="material-icons">favorite_border</i> Guardar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tatuaje 7 - Dotwork -->
+                <div class="gallery-item" data-category="dotwork">
+                    <img src="https://static.tatship.com/idea-page-posts/496db08a-9ce4-43ed-b808-9ad99455a006.jpg" alt="Tatuaje dotwork" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Dotwork</span>
+                        <h3 class="gallery-title">Mándala de Puntos</h3>
+                        <p class="gallery-description">Intrincado diseño creado exclusivamente con puntos que forman patrones geométricos y sombreados sutiles.</p>
+                        <div class="gallery-actions">
+                            <button class="action-btn view-details" data-id="7">
+                                <i class="material-icons">visibility</i> Ver detalles
+                            </button>
+                            <button class="action-btn">
+                                <i class="material-icons">favorite_border</i> Guardar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tatuaje 8 - Japonés -->
+                <div class="gallery-item" data-category="japones">
+                    <img src="https://images.unsplash.com/photo-1593537612370-4ec4d6c50d8a?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Tatuaje japonés" class="gallery-image">
+                    <div class="gallery-overlay">
+                        <span class="gallery-category">Japonés</span>
+                        <h3 class="gallery-title">Koi y Olas</h3>
+                        <p class="gallery-description">Carpas koi nadando contra la corriente en aguas turbulentas, simbolizando perseverancia y determinación.</p>
+                        <div class="gallery-actions">
+                            <button class="action-btn view-details" data-id="8">
+                                <i class="material-icons">visibility</i> Ver detalles
+                            </button>
+                            <button class="action-btn">
+                                <i class="material-icons">favorite_border</i> Guardar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div class="modal" id="tattoo-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div>
+                    <h2 class="modal-title" id="modal-tattoo-title">Título del Tatuaje</h2>
+                    <span class="modal-category" id="modal-tattoo-category">Categoría</span>
+                </div>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-tattoo-image" src="" alt="">
+                </div>
+                <div class="modal-details">
+                    <p class="modal-description" id="modal-tattoo-description"></p>
+                    
+                    <div class="tattoo-info">
+                        <div class="info-item">
+                            <div class="info-label">Estilo</div>
+                            <div class="info-value" id="modal-tattoo-style"></div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Tiempo Estimado</div>
+                            <div class="info-value" id="modal-tattoo-time"></div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Sesiones</div>
+                            <div class="info-value" id="modal-tattoo-sessions"></div>
+                        </div>
+                        <div class="info-item">
+                            <div class="info-label">Dolor</div>
+                            <div class="info-value" id="modal-tattoo-pain"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="modal-actions">
+                        <button class="modal-btn btn-primary">
+                            <i class="material-icons">event</i> Agendar Cita
+                        </button>
+                        <button class="modal-btn btn-outline">
+                            <i class="material-icons">chat</i> Consultar
+                        </button>
+                        <button class="modal-btn btn-outline">
+                            <i class="material-icons">share</i> Compartir
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>Art by Felix</h3>
+                    <p>Tu destino para arte corporal y diseños únicos. Expresa tu personalidad a través de nuestro arte.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="material-icons">facebook</i></a>
+                        <a href="#"><i class="material-icons">instagram</i></a>
+                        <a href="#"><i class="material-icons">twitter</i></a>
+                        <a href="#"><i class="material-icons">youtube</i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Galería Tatuajes</a></li>
+                        <li><a href="#">Camisetas</a></li>
+                        <li><a href="#">Cuadros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <p>📍 Calle Tinta 123, Ciudad Tattoo</p>
+                    <p>📞 +123 456 7890</p>
+                    <p>✉️ info@artbyfelix.com</p>
+                    <p>🕒 Lun-Vie: 10:00 - 18:00</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Art by Felix. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/galery.js"></script>
+</body>
+</html>
