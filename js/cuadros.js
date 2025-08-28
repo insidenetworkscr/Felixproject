@@ -1,4 +1,3 @@
-
         document.addEventListener('DOMContentLoaded', function() {
             // Variables globales
             let cartCount = 0;
@@ -9,45 +8,51 @@
             const decreaseQtyBtn = document.getElementById('decrease-qty');
             const increaseQtyBtn = document.getElementById('increase-qty');
             const quantityElement = document.getElementById('quantity');
-            const sizeOptions = document.querySelectorAll('.size-option');
+            const frameOptions = document.querySelectorAll('.frame-option');
             
             // Datos de productos (simulados)
             const products = {
                 1: {
-                    title: "Skull Design",
-                    price: "$39.99",
-                    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-                    description: "Camiseta de alta calidad con estampado de calavera estilo tradicional del tatuaje. Confeccionada en 100% algodón para mayor comodidad. Diseño exclusivo de Art by Felix."
+                    title: "Calavera Tradicional",
+                    price: "$89.99",
+                    dimensions: "50x70cm â€¢ Ã“leo sobre lienzo",
+                    image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                    description: "Calavera en estilo tradicional del tatuaje, pintada con Ã³leo sobre lienzo de alta calidad. Esta pieza representa la esencia del arte del tatuaje clÃ¡sico con colores vibrantes y trazos definidos. Incluye certificado de autenticidad."
                 },
                 2: {
-                    title: "Dragon Ink",
-                    price: "$42.99",
-                    image: "https://images.unsplash.com/photo-1602817538386-7b1c6f0e03f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-                    description: "Dragón japonés en estilo Irezumi. Esta camiseta presenta colores vibrantes y detalles intricados que reflejan el arte del tatuaje tradicional. Ideal para los amantes del estilo oriental."
+                    title: "DragÃ³n JaponÃ©s",
+                    price: "$129.99",
+                    dimensions: "70x100cm â€¢ AcrÃ­lico sobre lienzo",
+                    image: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                    description: "DragÃ³n en estilo Irezumi (tatuaje japonÃ©s tradicional), pintado con acrÃ­licos de alta resistencia sobre lienzo. Esta obra captura la esencia de la mitologÃ­a japonesa con detalles intricados y colores intensos. Una pieza impresionante para cualquier espacio."
                 },
                 3: {
-                    title: "Tribal Art",
-                    price: "$37.99",
-                    image: "https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-                    description: "Diseños tribales inspirados en los tatuajes polinesios. Patrones geométricos que simbolizan fuerza y protección. Hecha con algodón premium para máximo confort."
+                    title: "MÃ¡ndala Tribal",
+                    price: "$69.99",
+                    dimensions: "30x40cm â€¢ AcrÃ­lico sobre madera",
+                    image: "https://images.unsplash.com/photo-1515405295579-ba7b45403062?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                    description: "MÃ¡ndala con patrones tribales inspirados en los tatuajes polinesios y maorÃ­s. Pintado sobre madera tratada con acrÃ­licos de alta calidad. Esta pieza simboliza protecciÃ³n, equilibrio y conexiÃ³n espiritual."
                 },
                 4: {
-                    title: "Dark Rose",
-                    price: "$45.99",
-                    image: "https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-                    description: "Rosa negra con espinas, un clásico del tatuaje tradicional. Este diseño combina la belleza floral con la estética oscura. Edición limitada."
+                    title: "Retrato Realista",
+                    price: "$149.99",
+                    dimensions: "50x70cm â€¢ Ã“leo sobre lienzo",
+                    image: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                    description: "Retrato realista con elementos de tatuaje, pintado al Ã³leo sobre lienzo de lino. Esta obra combina la tÃ©cnica del realismo con la estÃ©tica del tatuaje, creando una pieza Ãºnica y llena de personalidad. Firmado por el artista."
                 },
                 5: {
-                    title: "Raven Skull",
-                    price: "$41.99",
-                    image: "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-                    description: "Calavera con cuervo, un diseño siniestro y popular en la cultura del tatuaje. Simboliza la transformación y el misterio. Confeccionada con los más altos estándares de calidad."
+                    title: "Rosa Negra",
+                    price: "$119.99",
+                    dimensions: "70x100cm â€¢ Ã“leo sobre lienzo",
+                    image: "https://images.unsplash.com/photo-1534237710431-e2fc698436d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                    description: "Rosa negra con espinas, un clÃ¡sico del tatuaje tradicional reinterpretado en Ã³leo sobre lienzo. Esta pieza contrasta la belleza floral con la oscuridad, creando una obra poderosa y elegante. Perfecta para espacios con personalidad."
                 },
                 6: {
-                    title: "Fire Dragon",
-                    price: "$44.99",
-                    image: "https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-                    description: "Dragón escupiendo fuego con colores intensos. Inspirado en los tatuajes orientales y la mitología asiática. Un diseño audaz para quienes no pasan desapercibidos."
+                    title: "Geisha Moderna",
+                    price: "$99.99",
+                    dimensions: "50x70cm â€¢ AcrÃ­lico y spray",
+                    image: "https://images.unsplash.com/photo-1543857778-c4a1a569e90b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                    description: "Geisha con elementos modernos y tatuajes, creada con tÃ©cnicas mixtas de acrÃ­lico y spray sobre lienzo. Esta obra fusiona la tradiciÃ³n japonesa con la estÃ©tica contemporÃ¡nea del tatuaje, resultando en una pieza vibrante y actual."
                 }
             };
             
@@ -64,10 +69,10 @@
                 
                 productCards.forEach(card => {
                     const cardCategory = card.getAttribute('data-category');
-                    const cardSizes = card.getAttribute('data-size').split(',');
+                    const cardSize = card.getAttribute('data-size');
                     
                     const categoryMatch = categoryValue === 'all' || cardCategory === categoryValue;
-                    const sizeMatch = sizeValue === 'all' || cardSizes.includes(sizeValue);
+                    const sizeMatch = sizeValue === 'all' || cardSize === sizeValue;
                     
                     if (categoryMatch && sizeMatch) {
                         card.style.display = 'block';
@@ -131,6 +136,7 @@
                 if (product) {
                     document.getElementById('modal-title').textContent = product.title;
                     document.getElementById('modal-price').textContent = product.price;
+                    document.getElementById('modal-dimensions').textContent = product.dimensions;
                     document.getElementById('modal-img').src = product.image;
                     document.getElementById('modal-description').textContent = product.description;
                     
@@ -145,7 +151,7 @@
                 
                 // Resetear selecciones
                 quantityElement.textContent = '1';
-                sizeOptions.forEach(option => option.classList.remove('selected'));
+                frameOptions.forEach(option => option.classList.remove('selected'));
             }
             
             closeModalBtn.addEventListener('click', closeModal);
@@ -171,10 +177,10 @@
                 quantityElement.textContent = quantity;
             });
             
-            // Selección de talla
-            sizeOptions.forEach(option => {
+            // SelecciÃ³n de marco
+            frameOptions.forEach(option => {
                 option.addEventListener('click', function() {
-                    sizeOptions.forEach(opt => opt.classList.remove('selected'));
+                    frameOptions.forEach(opt => opt.classList.remove('selected'));
                     this.classList.add('selected');
                 });
             });
@@ -196,25 +202,25 @@
                 const productName = document.getElementById('modal-title').textContent;
                 const productPrice = document.getElementById('modal-price').textContent.replace('$', '');
                 
-                // Verificar si se seleccionó una talla
-                const selectedSize = document.querySelector('.size-option.selected');
-                if (!selectedSize) {
-                    alert('Por favor selecciona una talla');
+                // Verificar si se seleccionÃ³ un marco
+                const selectedFrame = document.querySelector('.frame-option.selected');
+                if (!selectedFrame) {
+                    alert('Por favor selecciona un tipo de marco');
                     return;
                 }
                 
-                addToCart(productName, productPrice, quantity, selectedSize.getAttribute('data-size'));
+                addToCart(productName, productPrice, quantity, selectedFrame.getAttribute('data-frame'));
                 closeModal();
             });
             
-            function addToCart(productName, productPrice, qty = 1, size = 'M') {
+            function addToCart(productName, productPrice, qty = 1, frame = 'black') {
                 cartCount += parseInt(qty);
                 cartCounter.textContent = cartCount;
                 
                 showCartNotification();
                 
-                // Aquí normalmente se agregaría el producto a un array del carrito
-                console.log(`Añadido al carrito: ${productName}, Talla: ${size}, Cantidad: ${qty}, Precio: $${productPrice}`);
+                // AquÃ­ normalmente se agregarÃ­a el producto a un array del carrito
+                console.log(`AÃ±adido al carrito: ${productName}, Marco: ${frame}, Cantidad: ${qty}, Precio: $${productPrice}`);
             }
             
             function showCartNotification() {
@@ -225,19 +231,19 @@
                 }, 3000);
             }
             
-            // Botón comprar ahora
+            // BotÃ³n comprar ahora
             const buyNowBtn = document.querySelector('.buy-now');
             
             buyNowBtn.addEventListener('click', function() {
                 const productName = document.getElementById('modal-title').textContent;
-                const selectedSize = document.querySelector('.size-option.selected');
+                const selectedFrame = document.querySelector('.frame-option.selected');
                 
-                if (!selectedSize) {
-                    alert('Por favor selecciona una talla');
+                if (!selectedFrame) {
+                    alert('Por favor selecciona un tipo de marco');
                     return;
                 }
                 
-                alert(`¡Gracias por tu compra! Producto: ${productName}, Talla: ${selectedSize.getAttribute('data-size')}, Cantidad: ${quantity}`);
+                alert(`Â¡Gracias por tu compra! Producto: ${productName}, Marco: ${selectedFrame.getAttribute('data-frame')}, Cantidad: ${quantity}`);
                 closeModal();
             });
         });

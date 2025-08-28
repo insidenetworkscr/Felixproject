@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Camisetas - Art by Felix</title>
-      <script src="https://cdn.tailwindcss.com"></script>
+    <title>Cuadros - Art by Felix</title>
+     <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- Configuración Tailwind (colores/tema) -->
   <script>
@@ -37,18 +37,19 @@
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/camisas.css">
+    <link rel="stylesheet" href="css/cuadros.css">
     <link rel="stylesheet" href="css/Home.css">
 </head>
+</head>
 <body>
-    <!-- NAV inyectado por js/Home.js -->
+   <!-- NAV inyectado por js/Home.js -->
     <div id="nav-container"></div>
 
-    <!-- Hero Section para camisetas -->
-    <section class="hero-shirts" id="camisas">
-        <div class="container hero-shirts-content">
-            <h1>Camisetas con Cojones</h1>
-            <p>Diseños exclusivos para rockstar y amantes del arte. Prendas de alta calidad que reflejan tu pasión por el tatuaje.</p>
+    <!-- Hero Section para cuadros -->
+    <section class="hero-paintings">
+        <div class="container hero-paintings-content">
+            <h1>Cuadros con Alma</h1>
+            <p>Obras de arte Ãºnicas inspiradas en el mundo del tatuaje. Piezas exclusivas para decorar tus espacios con actitud.</p>
         </div>
     </section>
 
@@ -58,18 +59,17 @@
             <div class="filter-group">
                 <span class="filter-label">Filtrar por:</span>
                 <select class="filter-select" id="category-filter">
-                    <option value="all">Todas las categorías</option>
-                    <option value="skull">Diseños de calaveras</option>
-                    <option value="dragon">Dragones</option>
+                    <option value="all">Todos los estilos</option>
+                    <option value="traditional">Tradicional</option>
+                    <option value="japanese">JaponÃ©s</option>
                     <option value="tribal">Tribal</option>
-                    <option value="floral">Floral oscuro</option>
+                    <option value="realism">Realismo</option>
                 </select>
                 <select class="filter-select" id="size-filter">
-                    <option value="all">Todas las tallas</option>
-                    <option value="s">S</option>
-                    <option value="m">M</option>
-                    <option value="l">L</option>
-                    <option value="xl">XL</option>
+                    <option value="all">Todos los tamaÃ±os</option>
+                    <option value="small">PequeÃ±o (30x40cm)</option>
+                    <option value="medium">Mediano (50x70cm)</option>
+                    <option value="large">Grande (70x100cm)</option>
                 </select>
             </div>
             <div class="filter-group">
@@ -87,92 +87,98 @@
     <!-- Productos -->
     <section class="products">
         <div class="container">
-            <div class="product-grid" id="product-grid-camisas">
+            <div class="product-grid" id="product-grid">
                 <!-- Producto 1 -->
-                <div class="product-card" data-category="skull" data-size="s,m,l,xl">
+                <div class="product-card" data-category="traditional" data-size="medium">
                     <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Camisa Skull Design">
+                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cuadro Calavera Tradicional">
                     </div>
                     <div class="product-info">
-                        <h3 class="product-title">Skull Design</h3>
-                        <p class="product-price">$39.99</p>
+                        <h3 class="product-title">Calavera Tradicional</h3>
+                        <p class="product-price">$89.99</p>
+                        <p class="product-dimensions">50x70cm â€¢ Ã“leo sobre lienzo</p>
                         <div class="product-actions">
-                            <button class="add-to-cart" data-product="Skull Design" data-price="39.99">Añadir</button>
+                            <button class="add-to-cart" data-product="Calavera Tradicional" data-price="89.99">AÃ±adir</button>
                             <button class="view-details" data-product-id="1">Ver</button>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Producto 2 -->
-                <div class="product-card" data-category="dragon" data-size="m,l,xl">
+                <div class="product-card" data-category="japanese" data-size="large">
                     <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1602817538386-7b1c6f0e03f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Camisa Dragon Ink">
+                        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cuadro DragÃ³n JaponÃ©s">
                     </div>
                     <div class="product-info">
-                        <h3 class="product-title">Dragon Ink</h3>
-                        <p class="product-price">$42.99</p>
+                        <h3 class="product-title">DragÃ³n JaponÃ©s</h3>
+                        <p class="product-price">$129.99</p>
+                        <p class="product-dimensions">70x100cm â€¢ AcrÃ­lico sobre lienzo</p>
                         <div class="product-actions">
-                            <button class="add-to-cart" data-product="Dragon Ink" data-price="42.99">Añadir</button>
+                            <button class="add-to-cart" data-product="DragÃ³n JaponÃ©s" data-price="129.99">AÃ±adir</button>
                             <button class="view-details" data-product-id="2">Ver</button>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Producto 3 -->
-                <div class="product-card" data-category="tribal" data-size="s,m,l">
+                <div class="product-card" data-category="tribal" data-size="small">
                     <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Camisa Tribal Art">
+                        <img src="https://images.unsplash.com/photo-1515405295579-ba7b45403062?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cuadro MÃ¡ndala Tribal">
                     </div>
                     <div class="product-info">
-                        <h3 class="product-title">Tribal Art</h3>
-                        <p class="product-price">$37.99</p>
+                        <h3 class="product-title">MÃ¡ndala Tribal</h3>
+                        <p class="product-price">$69.99</p>
+                        <p class="product-dimensions">30x40cm â€¢ AcrÃ­lico sobre madera</p>
                         <div class="product-actions">
-                            <button class="add-to-cart" data-product="Tribal Art" data-price="37.99">Añadir</button>
+                            <button class="add-to-cart" data-product="MÃ¡ndala Tribal" data-price="69.99">AÃ±adir</button>
                             <button class="view-details" data-product-id="3">Ver</button>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Producto 4 -->
-                <div class="product-card" data-category="floral" data-size="s,xl">
+                <div class="product-card" data-category="realism" data-size="medium">
                     <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Camisa Dark Rose">
+                        <img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cuadro Retrato Realista">
                     </div>
                     <div class="product-info">
-                        <h3 class="product-title">Dark Rose</h3>
-                        <p class="product-price">$45.99</p>
+                        <h3 class="product-title">Retrato Realista</h3>
+                        <p class="product-price">$149.99</p>
+                        <p class="product-dimensions">50x70cm â€¢ Ã“leo sobre lienzo</p>
                         <div class="product-actions">
-                            <button class="add-to-cart" data-product="Dark Rose" data-price="45.99">Añadir</button>
+                            <button class="add-to-cart" data-product="Retrato Realista" data-price="149.99">AÃ±adir</button>
                             <button class="view-details" data-product-id="4">Ver</button>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Producto 5 -->
-                <div class="product-card" data-category="skull" data-size="m,l,xl">
+                <div class="product-card" data-category="traditional" data-size="large">
                     <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Camisa Raven Skull">
+                        <img src="https://images.unsplash.com/photo-1534237710431-e2fc698436d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cuadro Rosa Negra">
                     </div>
                     <div class="product-info">
-                        <h3 class="product-title">Raven Skull</h3>
-                        <p class="product-price">$41.99</p>
+                        <h3 class="product-title">Rosa Negra</h3>
+                        <p class="product-price">$119.99</p>
+                        <p class="product-dimensions">70x100cm â€¢ Ã“leo sobre lienzo</p>
                         <div class="product-actions">
-                            <button class="add-to-cart" data-product="Raven Skull" data-price="41.99">Añadir</button>
+                            <button class="add-to-cart" data-product="Rosa Negra" data-price="119.99">AÃ±adir</button>
                             <button class="view-details" data-product-id="5">Ver</button>
                         </div>
                     </div>
                 </div>
                 
                 <!-- Producto 6 -->
-                <div class="product-card" data-category="dragon" data-size="s,m,xl">
+                <div class="product-card" data-category="japanese" data-size="medium">
                     <div class="product-img">
-                        <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Camisa Fire Dragon">
+                        <img src="https://images.unsplash.com/photo-1543857778-c4a1a569e90b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Cuadro Geisha Moderna">
                     </div>
                     <div class="product-info">
-                        <h3 class="product-title">Fire Dragon</h3>
-                        <p class="product-price">$44.99</p>
+                        <h3 class="product-title">Geisha Moderna</h3>
+                        <p class="product-price">$99.99</p>
+                        <p class="product-dimensions">50x70cm â€¢ AcrÃ­lico y spray</p>
                         <div class="product-actions">
-                            <button class="add-to-cart" data-product="Fire Dragon" data-price="44.99">Añadir</button>
+                            <button class="add-to-cart" data-product="Geisha Moderna" data-price="99.99">AÃ±adir</button>
                             <button class="view-details" data-product-id="6">Ver</button>
                         </div>
                     </div>
@@ -185,7 +191,7 @@
     <div class="modal" id="product-modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h2>Detalles del Producto</h2>
+                <h2>Detalles del Cuadro</h2>
                 <span class="close-modal">&times;</span>
             </div>
             <div class="modal-body">
@@ -195,15 +201,16 @@
                 <div class="modal-details">
                     <h3 class="modal-title" id="modal-title"></h3>
                     <p class="modal-price" id="modal-price"></p>
+                    <p class="modal-dimensions" id="modal-dimensions"></p>
                     <p class="modal-description" id="modal-description"></p>
                     
-                    <div class="size-selector">
-                        <p class="size-title">Selecciona talla:</p>
-                        <div class="size-options">
-                            <div class="size-option" data-size="s">S</div>
-                            <div class="size-option" data-size="m">M</div>
-                            <div class="size-option" data-size="l">L</div>
-                            <div class="size-option" data-size="xl">XL</div>
+                    <div class="frame-selector">
+                        <p class="frame-title">Selecciona marco:</p>
+                        <div class="frame-options">
+                            <div class="frame-option" data-frame="black">Negro</div>
+                            <div class="frame-option" data-frame="brown">MarrÃ³n</div>
+                            <div class="frame-option" data-frame="natural">Natural</div>
+                            <div class="frame-option" data-frame="none">Sin marco</div>
                         </div>
                     </div>
                     
@@ -218,23 +225,24 @@
                     
                     <div class="modal-actions">
                         <button class="buy-now">Comprar ahora</button>
-                        <button class="add-to-cart-modal">Añadir al carrito</button>
+                        <button class="add-to-cart-modal">AÃ±adir al carrito</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Notificación de carrito -->
+    <!-- NotificaciÃ³n de carrito -->
     <div class="cart-notification" id="cart-notification">
         <i class="material-icons">check_circle</i>
-        <span>Producto añadido al carrito</span>
+        <span>Producto aÃ±adido al carrito</span>
     </div>
 
     <!-- FOOTER inyectado por js/Home.js -->
     <div id="footer-container"></div>
 
-    <script src="js/camisas.js"></script>
+    <script src="js/cuadros.js"></script>
     <script src="js/Home.js"></script>
+    
 </body>
 </html>

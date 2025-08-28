@@ -1,4 +1,4 @@
-
+   
         :root {
             --color-negro: #000000;
             --color-rojo-oscuro: #850200;
@@ -28,7 +28,7 @@
             margin: 0 auto;
         }
         
-        /* Header y navegación */
+        /* Header y navegaciÃ³n */
         header {
             background-color: var(--color-negro);
             padding: 20px 0;
@@ -151,9 +151,9 @@
             border-radius: 0.375rem;
         }
         
-        /* Hero section de camisetas */
-        .hero-shirts {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+        /* Hero section de cuadros */
+        .hero-paintings {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
             height: 400px;
             display: flex;
             align-items: center;
@@ -162,7 +162,7 @@
             margin-bottom: 40px;
         }
         
-        .hero-shirts-content h1 {
+        .hero-paintings-content h1 {
             font-size: 3rem;
             margin-bottom: 20px;
             text-transform: uppercase;
@@ -171,7 +171,7 @@
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         
-        .hero-shirts-content p {
+        .hero-paintings-content p {
             font-size: 1.2rem;
             max-width: 600px;
             margin: 0 auto;
@@ -250,7 +250,7 @@
         }
         
         .product-card:hover .product-img img {
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
         
         .product-info {
@@ -265,9 +265,16 @@
         
         .product-price {
             font-size: 1.3rem;
-            color: var(--color-blanco);
+            color: var(--color-rojo-oscuro);
             font-weight: 700;
             margin-bottom: 15px;
+        }
+        
+        .product-dimensions {
+            font-size: 0.9rem;
+            color: var(--color-blanco);
+            margin-bottom: 10px;
+            opacity: 0.8;
         }
         
         .product-actions {
@@ -298,7 +305,7 @@
         .view-details {
             background-color: transparent;
             color: var(--color-blanco);
-            border: 2px solid var(--color-rojo-oscuro);
+            border: 2px solid var(--color-dorado);
             padding: 8px 15px;
             border-radius: 4px;
             cursor: pointer;
@@ -309,7 +316,7 @@
         }
         
         .view-details:hover {
-            background-color: var(--color-rojo-oscuro);
+            background-color: var(--color-dorado);
             color: var(--color-negro);
         }
         
@@ -413,29 +420,37 @@
             margin-bottom: 20px;
         }
         
+        .modal-dimensions {
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: var(--color-gris);
+            border-radius: 4px;
+            display: inline-block;
+        }
+        
         .modal-description {
             margin-bottom: 25px;
             line-height: 1.8;
         }
         
-        .size-selector {
+        .frame-selector {
             margin-bottom: 25px;
         }
         
-        .size-title {
+        .frame-title {
             font-weight: 600;
             margin-bottom: 10px;
         }
         
-        .size-options {
+        .frame-options {
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
         }
         
-        .size-option {
-            width: 50px;
-            height: 40px;
+        .frame-option {
+            padding: 10px 15px;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -445,7 +460,7 @@
             transition: all 0.3s ease;
         }
         
-        .size-option:hover, .size-option.selected {
+        .frame-option:hover, .frame-option.selected {
             border-color: var(--color-rojo-oscuro);
             background-color: rgba(133, 2, 0, 0.1);
         }
@@ -563,8 +578,12 @@
                 flex-direction: column;
             }
             
-            .hero-shirts-content h1 {
+            .hero-paintings-content h1 {
                 font-size: 2rem;
+            }
+            
+            .frame-options {
+                flex-direction: column;
             }
         }
         
@@ -599,5 +618,72 @@
             margin-right: 10px;
         }
         
-      
+        /* Footer */
+        footer {
+            background-color: var(--color-negro);
+            padding: 60px 0 30px;
+            margin-top: 60px;
+            border-top: 2px solid var(--color-rojo-oscuro);
+        }
         
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: var(--color-rojo-oscuro);
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 2px;
+            background-color: var(--color-dorado);
+            bottom: 0;
+            left: 0;
+        }
+        
+        .footer-column p, .footer-column li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: var(--color-gris);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            background-color: var(--color-rojo-oscuro);
+            transform: translateY(-5px);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 30px;
+            border-top: 1px solid var(--color-gris);
+        }
