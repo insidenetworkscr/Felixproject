@@ -151,11 +151,12 @@
                             registerButton.style.background = '#2e7d32';
                             registerButton.style.backgroundPosition = '0 0';
                             
-                            // Redirección simulada
+                            // Redirección simulada: crear sesión básica y redirigir al inicio
                             setTimeout(() => {
+                                const username = (firstName || lastName) ? (firstName + (lastName ? (' ' + lastName) : '')) : email.split('@')[0];
+                                localStorage.setItem('currentUser', JSON.stringify({ name: username, email }));
                                 alert('¡Cuenta creada con éxito! Serás redirigido a la página de inicio.');
-                                // En un caso real, aquí redirigirías al usuario
-                                // window.location.href = 'index.html';
+                                window.location.href = 'Main.html';
                             }, 1000);
                         }, 1500);
                     }

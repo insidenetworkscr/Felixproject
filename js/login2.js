@@ -15,7 +15,7 @@
             
             // Form submission
             const loginForm = document.getElementById('login-form');
-            
+
             loginForm.addEventListener('submit', function(e) {
                 e.preventDefault();
                 
@@ -47,16 +47,17 @@
                             loginButton.style.background = '#2e7d32';
                             loginButton.style.backgroundPosition = '0 0';
                             
-                            // Redirección simulada
+                            // Guardar sesión (simulado) y redirigir al inicio
                             setTimeout(() => {
-                                alert('¡Inicio de sesión exitoso! Redirigiendo...');
-                                // En un caso real, aquí redirigirías al usuario
-                                // window.location.href = 'perfil.html';
+                                const username = (email && email.indexOf('@') > -1) ? email.split('@')[0] : email || 'Usuario';
+                                localStorage.setItem('currentUser', JSON.stringify({ name: username, email }));
+                                window.location.href = 'Main.html';
                             }, 1000);
                         }, 1500);
                     }
                 }, 50);
             });
+
             
             // Efecto de aparición para los elementos del formulario
             const formElements = document.querySelectorAll('.form-group, .remember-forgot, .login-button, .divider, .social-login, .register-link');

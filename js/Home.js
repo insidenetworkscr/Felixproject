@@ -88,7 +88,7 @@ function enhanceNavUserArea() {
   if (!userArea) return;
   const current = JSON.parse(localStorage.getItem('currentUser') || 'null');
   if (!current) {
-    userArea.innerHTML = `<a href="login.html" class="px-4 py-2 rounded-md bg-primary text-white font-medium hover:bg-accent transition inline-block">Iniciar Sesión</a>`;
+    userArea.innerHTML = `<a href="Login2.html" class="px-4 py-2 rounded-md bg-primary text-white font-medium hover:bg-accent transition inline-block">Iniciar Sesión</a>`;
     return;
   }
 

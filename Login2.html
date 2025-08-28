@@ -1,67 +1,31 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-       <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuadros - Art by Felix</title>
-     <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Configuración Tailwind (colores/tema) -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            background: "#000000",
-            surface: "#0b0b0b",
-            border: "#1f1f1f",
-            primary: "#850200",
-            accent: "#a82010"
-          },
-          boxShadow: {
-            soft: "0 10px 25px rgba(0,0,0,.35)"
-          }
-        }
-      }
-    }
-  </script>
+    <!-- Configuración Tailwind (colores/tema) -->
+
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="css/login2.css">
-    <link rel="stylesheet" href="css/Home.css">
+
 
 </head>
+
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <nav class="flex items-center justify-between">
-                <a class="text-2xl font-bold text-white" href="#">Art by Felix</a>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a class="text-gray-300 hover:text-white" href="#">Inicio</a>
-                    <a class="text-gray-300 hover:text-white" href="#">Galería Tatuajes</a>
-                    <a class="text-gray-300 hover:text-white" href="#">Camisetas</a>
-                    <a class="text-gray-300 hover:text-white" href="#">Cuadros</a>
-                    <a class="text-gray-300 hover:text-white" href="#">Reseñas</a>
-                    <a class="text-gray-300 hover:text-white" href="#">Contacto</a>
-                </div>
-                <div class="flex items-center space-x-4">
-                    <button class="relative">
-                        <i class="material-icons text-gray-300">shopping_cart</i>
-                        <span class="absolute -top-2 -right-2 bg-orange-500 text-white text-xs rounded-full h-5 w-5 flex items-center justify-center">0</span>
-                    </button>
-                    <button class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-2 px-4 rounded-md">
-                        Iniciar Sesión
-                    </button>
-                </div>
-            </nav>
-        </div>
-    </header>
+
+
+    <a href="Main.html" id="back-home-login" class="back-home-btn" aria-label="Volver al inicio" style="position:fixed;top:18px;left:18px;z-index:9999;display:inline-flex;align-items:center;gap:8px;padding:8px 12px;background:#850200;color:#f2f2f2;text-decoration:none;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.6);font-weight:600;">&larr; Inicio</a>
+
 
     <!-- Login Section -->
     <section class="login-section">
         <div class="login-background"></div>
-        
+
         <div class="floating-shapes">
             <div class="shape"></div>
             <div class="shape"></div>
@@ -69,13 +33,13 @@
             <div class="shape"></div>
             <div class="shape"></div>
         </div>
-        
+
         <div class="login-container">
             <div class="login-header">
                 <h2>Iniciar Sesión</h2>
                 <p>Accede a tu cuenta para continuar</p>
             </div>
-            
+
             <form id="login-form">
                 <div class="form-group">
                     <label for="email">Correo Electrónico</label>
@@ -84,7 +48,7 @@
                         <input type="email" id="email" class="form-control" placeholder="tu@email.com" required>
                     </div>
                 </div>
-                
+
                 <div class="form-group">
                     <label for="password">Contraseña</label>
                     <div class="input-with-icon">
@@ -95,7 +59,7 @@
                         </button>
                     </div>
                 </div>
-                
+
                 <div class="remember-forgot">
                     <div class="remember-me">
                         <input type="checkbox" id="remember">
@@ -103,14 +67,14 @@
                     </div>
                     <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
                 </div>
-                
+
                 <button type="submit" class="login-button pulse-effect">Iniciar Sesión</button>
             </form>
-            
+
             <div class="divider">
                 <span>o</span>
             </div>
-            
+
             <div class="social-login">
                 <button class="social-btn google">
                     <i class="material-icons">mail</i>
@@ -122,54 +86,15 @@
                     <i class="material-icons">chat</i>
                 </button>
             </div>
-            
+
             <div class="register-link">
-                <p>¿No tienes una cuenta? <a href="#">Regístrate ahora</a></p>
+                <p>¿No tienes una cuenta? <a href="register2.html" id="register-now">Regístrate ahora</a></p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <h3>Art by Felix</h3>
-                    <p>Tu destino para arte corporal y diseños únicos. Expresa tu personalidad a través de nuestro arte.</p>
-                    <div class="social-links">
-                        <a href="#"><i class="material-icons">facebook</i></a>
-                        <a href="#"><i class="material-icons">instagram</i></a>
-                        <a href="#"><i class="material-icons">twitter</i></a>
-                        <a href="#"><i class="material-icons">youtube</i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Enlaces Rápidos</h3>
-                    <ul>
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Galería Tatuajes</a></li>
-                        <li><a href="#">Camisetas</a></li>
-                        <li><a href="#">Cuadros</a></li>
-                        <li><a href="#">Contacto</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-column">
-                    <h3>Contacto</h3>
-                    <p>📍 Calle Tinta 123, Ciudad Tattoo</p>
-                    <p>📞 +123 456 7890</p>
-                    <p>✉️ info@artbyfelix.com</p>
-                    <p>🕒 Lun-Vie: 10:00 - 18:00</p>
-                </div>
-            </div>
-            
-            <div class="copyright">
-                <p>&copy; 2023 Art by Felix. Todos los derechos reservados.</p>
-            </div>
-        </div>
-    </footer>
 
     <script src="js/login2.js"></script>
 </body>
+
 </html>

@@ -1,44 +1,78 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Carrito — Art by Felix</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Carrito - Art by Felix</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            background: "#000000",
+            surface: "#0b0b0b",
+            border: "#1f1f1f",
+            primary: "#850200",
+            accent: "#a82010"
+          }
+        }
+      }
+    }
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/Home.css">
   <link rel="stylesheet" href="css/cart.css">
 </head>
-<body class="min-h-screen" style="background:radial-gradient(800px 400px at 10% 20%, rgba(133,2,0,0.02), transparent);">
+<body>
+  <!-- Nav will be injected here -->
   <div id="nav-container"></div>
 
-  <div class="back-top"><a href="Main.html" class="small-link">← Volver al inicio</a></div>
-
-  <main style="padding:80px 18px; max-width:1100px; margin:0 auto;">
-    <section class="glass" style="padding:24px; border-radius:12px;">
-      <div style="display:flex; align-items:center; justify-content:space-between; gap:16px;">
-        <div>
-          <h1 style="color:#fff; font-family:'Cinzel', serif; margin:0;">Tu carrito</h1>
-          <p style="color:#cbd5e1; margin:6px 0 0;">Revisa los artículos antes de pagar.</p>
-        </div>
-        <div>
-          <button id="clearCart" class="small-link" style="background:transparent; border:1px solid rgba(255,255,255,0.04); padding:8px 10px; border-radius:8px;">Vaciar carrito</button>
-        </div>
-      </div>
-
-      <div id="cartArea" style="margin-top:18px;">
-        <!-- items will render here -->
-      </div>
-
-      <div id="cartFooter" style="margin-top:18px; display:flex; justify-content:space-between; align-items:center;">
-        <div id="summary" style="color:#cbd5e1;"></div>
-        <div>
-          <a href="Main.html" class="small-link" style="margin-right:12px;">← Seguir comprando</a>
-          <button id="checkoutBtn" class="btn-primary">Pagar</button>
-        </div>
+  <main class="cart-page">
+    <section class="cart-hero">
+      <div class="container">
+        <h1>Tu Carrito</h1>
+        <p class="subtitle">Revisa los productos que deseas comprar. Puedes modificar cantidades o eliminarlos.</p>
       </div>
     </section>
+
+    <section class="cart-content container">
+      <div class="cart-grid">
+        <div class="cart-items" id="cart-items">
+          <!-- items rendered here -->
+        </div>
+
+        <aside class="cart-summary" id="cart-summary">
+          <h2>Resumen</h2>
+          <div class="summary-body">
+            <div class="summary-row"><span>Subtotal</span><span id="summary-subtotal">€0.00</span></div>
+            <div class="summary-row"><span>Envío</span><span id="summary-shipping">€0.00</span></div>
+            <div class="summary-row total"><span>Total</span><span id="summary-total">€0.00</span></div>
+          </div>
+          <button id="checkout-btn" class="btn primary">Finalizar compra</button>
+          <button id="clear-btn" class="btn ghost">Vaciar carrito</button>
+        </aside>
+      </div>
+
+      <div id="cart-empty" class="cart-empty" style="display:none;">
+        <p>Tu carrito está vacío.</p>
+        <a href="Main.html" class="btn primary">Volver al inicio</a>
+      </div>
+    </section>
+
+    
   </main>
 
-  <script src="js/cart.js"></script>
   <script src="js/Home.js"></script>
+  <script src="js/cart.js"></script>
+
+  <!-- Footer will be injected here -->
+  <div id="footer-container"></div>
 </body>
 </html>
