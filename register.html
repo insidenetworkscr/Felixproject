@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Registrar — Art by Felix</title>
+
+  <!-- Tailwind CDN (opcional) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/Home.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+<body class="min-h-screen login-page">
+  <div class="back-top"><a href="Main.html" class="small-link">← Volver al inicio</a></div>
+  <main class="login-hero">
+    <section class="login-card glass">
+      <div class="login-brand flex items-center gap-4 mb-4">
+        <svg width="100" height="30" viewBox="0 0 260 80" xmlns="http://www.w3.org/2000/svg" class="shrink-0">
+          <ellipse cx="130" cy="40" rx="120" ry="28" fill="none" stroke="#fff" stroke-width="3" opacity="0.12"/>
+          <text x="130" y="52" text-anchor="middle" font-size="22" fill="#fff" font-family="Cinzel, serif">Art by Felix</text>
+        </svg>
+      </div>
+
+      <h1 class="login-title">Crea tu cuenta</h1>
+      <p class="login-sub">Regístrate para agendar citas, encargar arte o comprar productos exclusivos.</p>
+
+      <form id="registerForm" class="mt-6 grid gap-4" action="#">
+        <label class="sr-only" for="name">Nombre completo</label>
+        <input id="name" name="name" type="text" placeholder="Nombre completo" required class="input-glow">
+
+        <label class="sr-only" for="email">Correo electrónico</label>
+        <input id="email" name="email" type="email" placeholder="Correo electrónico" required class="input-glow">
+
+        <label class="sr-only" for="password">Contraseña</label>
+        <input id="password" name="password" type="password" placeholder="Contraseña (mín. 8 caracteres)" required class="input-glow">
+
+        <label class="sr-only" for="confirmPwd">Confirmar contraseña</label>
+        <input id="confirmPwd" name="confirmPwd" type="password" placeholder="Confirmar contraseña" required class="input-glow">
+
+        <div class="flex items-center justify-between text-sm gap-4">
+          <label class="flex items-center gap-2 small-muted"><input type="checkbox" name="terms" required> Acepto términos</label>
+        </div>
+
+        <div id="registerError" class="small-muted" style="color:#ff6b6b; display:none;">Las contraseñas no coinciden.</div>
+
+        <button type="submit" class="btn-primary">Crear cuenta</button>
+
+        <div class="divider"><span>o</span></div>
+
+        <div class="social-login flex gap-3 justify-center">
+          <a href="#" class="social-btn" aria-label="Registrarse con Google">G</a>
+          <a href="#" class="social-btn" aria-label="Registrarse con Facebook">f</a>
+          <a href="#" class="social-btn" aria-label="Registrarse con Apple"></a>
+        </div>
+      </form>
+
+      <p class="mt-6 text-center small-muted">¿Ya tienes cuenta? <a href="login.html" class="small-link">Inicia sesión</a></p>
+    </section>
+  </main>
+
+  <script src="login.js"></script>
+
+  <div class="mt-6"></div>
+  <script src="script.js"></script>
+</body>
+</html>

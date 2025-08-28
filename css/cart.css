@@ -1,0 +1,10 @@
+/* Estilos críticos para carrito */
+body { background: #000; color: #fff; font-family: Arial, sans-serif; }
+.glass { background: rgba(255,255,255,0.03); backdrop-filter: blur(6px); border:1px solid rgba(255,255,255,0.06); border-radius:12px; }
+.btn-primary { padding:10px 14px; border-radius:10px; background:linear-gradient(90deg,#850200,#a82010); color:#fff; border:none; cursor:pointer; }
+.small-link { color:#cbd5e1; text-decoration:none; }
+.small-link:hover { color:#fff; }
+.back-top { position: fixed; top: 16px; left: 16px; z-index:60; }
+.cart-item { display:flex; gap:12px; align-items:center; padding:12px; margin-bottom:10px; }
+.cart-item .thumb { width:72px; height:72px; border-radius:8px; overflow:hidden; background:#111; }
+.cart-total { color:#fff; font-weight:700; }

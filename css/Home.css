@@ -1,0 +1,215 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000000; /* fondo negro */
+  color: #fff;
+  line-height: 1.6;
+}
+
+/* ===== Sección Biografía ===== */
+.bio-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px 20px;
+  min-height: 60vh; /* Ajuste: no ocupa toda la pantalla */
+  text-align: center;
+  background-color: #0b0b0b; /* superficie oscura */
+}
+
+.bio-section img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #850200; /* color principal */
+}
+
+.bio-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #850200; /* color principal */
+}
+
+.bio-section p {
+  max-width: 600px;
+  font-size: 16px;
+  color: #cbd5e1;
+}
+
+/* ===== Categorías ===== */
+.categories {
+  padding: 50px 20px;
+  background-color: #0a0f1c;
+  text-align: center;
+}
+
+.categories h3 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.categories ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.categories ul li {
+  font-size: 16px;
+  cursor: pointer;
+  color: #cbd5e1;
+  transition: color 0.3s;
+}
+
+.categories ul li:hover {
+  color: #ff6600;
+}
+
+/* ===== Footer ===== */
+footer {
+  background-color: #000000;
+  padding: 50px 20px 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-section h3 {
+  color: #fff;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.footer-section p {
+  color: #cbd5e1;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #850200;
+}
+
+.footer-section .contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.footer-section .contact-item i {
+  color: #850200;
+}
+
+/* Redes Sociales */
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+/* Iconos locales en footer */
+.social-icons img.social-icon {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  display: block;
+  filter: drop-shadow(0 2px 2px rgba(0,0,0,0.35));
+}
+
+.social-icons a {
+  display: inline-block;
+}
+
+
+
+/* Copy */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  border-top: 1px solid #1e293b;
+  padding-top: 15px;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.footer-bottom span {
+  color: #850200;
+}
+/* Marca */
+.brand-font {
+  font-family: "Cinzel", serif;
+  letter-spacing: 0.3px;
+}
+
+/* Tarjetas "vidrio" */
+.glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Overlay del hero */
+.hero-overlay {
+  background: radial-gradient(
+      1200px 600px at 75% 30%,
+      rgba(133, 2, 0, 0.18),
+      transparent 60%
+    ),
+    radial-gradient(
+      800px 400px at 20% 80%,
+      rgba(168, 32, 16, 0.12),
+      transparent 55%
+    );
+}
+
+/* Scroll suave y compensación por nav fijo */
+html {
+  scroll-behavior: smooth;
+}
+#gallery,
+#shirts,
+#paintings,
+#reviews,
+#contact,
+#categories {
+  scroll-margin-top: 100px;
+}
+/* Login and cart specific styles were moved to login.css and cart.css */
