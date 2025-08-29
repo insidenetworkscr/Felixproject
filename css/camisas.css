@@ -153,7 +153,7 @@
         
         /* Hero section de camisetas */
         .hero-shirts {
-            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1562157873-818bc0726f68?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://static.eldiario.es/clip/4a92c3ee-98fe-4198-be80-2f625116fd0d_16-9-aspect-ratio_default_0.jpg') no-repeat center center/cover;
             height: 400px;
             display: flex;
             align-items: center;

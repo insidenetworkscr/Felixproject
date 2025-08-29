@@ -16,13 +16,13 @@
                 1: {
                     title: "Skull Design",
                     price: "$39.99",
-                    image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                    image: 'img/tshirt.png',
                     description: "Camiseta de alta calidad con estampado de calavera estilo tradicional del tatuaje. Confeccionada en 100% algodón para mayor comodidad. Diseño exclusivo de Art by Felix."
                 },
                 2: {
                     title: "Dragon Ink",
                     price: "$42.99",
-                    image: "https://images.unsplash.com/photo-1602817538386-7b1c6f0e03f9?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                    image: "https://img.freepik.com/vector-premium/estampa-diseno-camisetas-ropa-calle_562337-208.jpg",
                     description: "Dragón japonés en estilo Irezumi. Esta camiseta presenta colores vibrantes y detalles intricados que reflejan el arte del tatuaje tradicional. Ideal para los amantes del estilo oriental."
                 },
                 3: {

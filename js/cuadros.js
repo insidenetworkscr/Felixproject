@@ -16,14 +16,14 @@
                     title: "Calavera Tradicional",
                     price: "$89.99",
                     dimensions: "50x70cm â€¢ Ã“leo sobre lienzo",
-                    image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                    image: "https://cdn0.unprofesor.com/es/posts/4/5/2/cabeza_de_medusa_1597_5254_4_600.jpg",
                     description: "Calavera en estilo tradicional del tatuaje, pintada con Ã³leo sobre lienzo de alta calidad. Esta pieza representa la esencia del arte del tatuaje clÃ¡sico con colores vibrantes y trazos definidos. Incluye certificado de autenticidad."
                 },
                 2: {
                     title: "DragÃ³n JaponÃ©s",
                     price: "$129.99",
                     dimensions: "70x100cm â€¢ AcrÃ­lico sobre lienzo",
-                    image: "https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+                    image: "https://i.etsystatic.com/44971320/r/il/222adc/5417746611/il_fullxfull.5417746611_ojym.jpg",
                     description: "DragÃ³n en estilo Irezumi (tatuaje japonÃ©s tradicional), pintado con acrÃ­licos de alta resistencia sobre lienzo. Esta obra captura la esencia de la mitologÃ­a japonesa con detalles intricados y colores intensos. Una pieza impresionante para cualquier espacio."
                 },
                 3: {
