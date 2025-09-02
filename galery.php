@@ -32,8 +32,8 @@
     
 </head>
 <body>
-    <!-- Nav will be injected here -->
-    <div id="nav-container"></div>
+ <!-- NAV cargado por PHP -->
+  <?php include __DIR__ . '/partials/nav.php'; ?>
 
     <div style="height:80px;"></div>
 
@@ -262,9 +262,9 @@
         </div>
     </div>
 
-    <!-- Footer will be injected here -->
-    <div id="footer-container"></div>
-
+<!-- FOOTER cargado por PHP -->
+  <?php include __DIR__ . '/partials/footer.php'; ?>
+  
     <script src="js/Home.js"></script>
     <script src="js/galery.js"></script>
 </body>

@@ -31,8 +31,8 @@
   <link rel="stylesheet" href="css/cart.css">
 </head>
 <body>
-  <!-- Nav will be injected here -->
-  <div id="nav-container"></div>
+  <!-- NAV cargado por PHP -->
+  <?php include __DIR__ . '/partials/nav.php'; ?>
 
   <main class="cart-page">
     <section class="cart-hero">
@@ -62,7 +62,7 @@
 
       <div id="cart-empty" class="cart-empty" style="display:none;">
         <p>Tu carrito está vacío.</p>
-        <a href="Main.html" class="btn primary">Volver al inicio</a>
+        <a href="Main.php" class="btn primary">Volver al inicio</a>
       </div>
     </section>
 
@@ -72,7 +72,7 @@
   <script src="js/Home.js"></script>
   <script src="js/cart.js"></script>
 
-  <!-- Footer will be injected here -->
-  <div id="footer-container"></div>
+ <!-- FOOTER cargado por PHP -->
+  <?php include __DIR__ . '/partials/footer.php'; ?>
 </body>
 </html>

@@ -43,8 +43,8 @@
 
 <body class="min-h-screen">
 
-  <!-- NAV se inyecta aquí -->
-  <div id="nav-container"></div>
+  <!-- NAV cargado por PHP -->
+  <?php include __DIR__ . '/partials/nav.php'; ?>
 
  <!-- HERO -->
 <header class="pt-24 min-h-[80vh] flex items-center hero-overlay">
@@ -235,8 +235,8 @@
   </section>
 
 
-  <!-- FOOTER se inyecta aquí -->
-  <div id="footer-container"></div>
+  <!-- FOOTER cargado por PHP -->
+  <?php include __DIR__ . '/partials/footer.php'; ?>
 
 
   <!-- JS -->

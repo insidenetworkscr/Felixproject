@@ -9,9 +9,10 @@ function loadNav() {
   const container = document.getElementById('nav-container');
   if (!container) return;
 
-  fetch('nav.html')
+  // Usar ruta absoluta al partial para evitar problemas de resolución relativa
+  fetch(`${location.origin}/Proyectos/Felixproject/partials/nav.php`)
     .then(res => {
-      if (!res.ok) throw new Error('No se pudo cargar nav.html');
+      if (!res.ok) throw new Error('No se pudo cargar nav.php');
       return res.text();
     })
     .then(html => {
@@ -36,9 +37,9 @@ function loadFooter() {
   const container = document.getElementById('footer-container');
   if (!container) return;
 
-  fetch('footer.html')
+  fetch(`${location.origin}/Proyectos/Felixproject/partials/footer.php`)
     .then(res => {
-      if (!res.ok) throw new Error('No se pudo cargar footer.html');
+      if (!res.ok) throw new Error('No se pudo cargar footer.php');
       return res.text();
     })
     .then(html => {
@@ -88,7 +89,7 @@ function enhanceNavUserArea() {
   if (!userArea) return;
   const current = JSON.parse(localStorage.getItem('currentUser') || 'null');
   if (!current) {
-    userArea.innerHTML = `<a href="Login2.html" class="px-4 py-2 rounded-md bg-primary text-white font-medium hover:bg-accent transition inline-block">Iniciar Sesión</a>`;
+    userArea.innerHTML = `<a href="${location.origin}/Proyectos/Felixproject/Login2.php" class="px-4 py-2 rounded-md bg-primary text-white font-medium hover:bg-accent transition inline-block">Iniciar Sesión</a>`;
     return;
   }
 
@@ -110,7 +111,7 @@ function enhanceNavUserArea() {
   const userMenu = document.getElementById('userMenu');
   const logoutBtn = document.getElementById('logoutBtn');
 
-  if (cartBtn) cartBtn.addEventListener('click', () => { window.location.href = 'cart.html'; });
+  if (cartBtn) cartBtn.addEventListener('click', () => { window.location.href = `${location.origin}/Proyectos/Felixproject/cart.php`; });
   if (userBtn && userMenu) userBtn.addEventListener('click', () => userMenu.classList.toggle('hidden'));
   if (logoutBtn) logoutBtn.addEventListener('click', (e) => { e.preventDefault(); localStorage.removeItem('currentUser'); window.location.reload(); });
 }

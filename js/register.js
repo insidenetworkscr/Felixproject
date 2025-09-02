@@ -1,5 +1,4 @@
-
-        document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
             // Toggle password visibility
             const passwordToggle = document.getElementById('password-toggle');
             const passwordInput = document.getElementById('password');
@@ -156,7 +155,8 @@
                                 const username = (firstName || lastName) ? (firstName + (lastName ? (' ' + lastName) : '')) : email.split('@')[0];
                                 localStorage.setItem('currentUser', JSON.stringify({ name: username, email }));
                                 alert('¡Cuenta creada con éxito! Serás redirigido a la página de inicio.');
-                                window.location.href = 'Main.html';
+                                // Ruta absoluta para evitar resolución relativa errónea
+                                window.location.href = `${location.origin}/Proyectos/Felixproject/Main.php`;
                             }, 1000);
                         }, 1500);
                     }
@@ -190,3 +190,4 @@
                 });
             });
         });
+

@@ -1,4 +1,4 @@
-    document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
             // Toggle password visibility
             const passwordToggle = document.getElementById('password-toggle');
             const passwordInput = document.getElementById('password');
@@ -51,7 +51,8 @@
                             setTimeout(() => {
                                 const username = (email && email.indexOf('@') > -1) ? email.split('@')[0] : email || 'Usuario';
                                 localStorage.setItem('currentUser', JSON.stringify({ name: username, email }));
-                                window.location.href = 'Main.html';
+                                // Ruta absoluta para evitar redirecciones incorrectas
+                                window.location.href = `${location.origin}/Proyectos/Felixproject/Main.php`;
                             }, 1000);
                         }, 1500);
                     }

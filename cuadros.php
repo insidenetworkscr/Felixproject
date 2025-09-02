@@ -42,8 +42,8 @@
 </head>
 </head>
 <body>
-   <!-- NAV inyectado por js/Home.js -->
-    <div id="nav-container"></div>
+ <!-- NAV cargado por PHP -->
+  <?php include __DIR__ . '/partials/nav.php'; ?>
 
     <!-- Hero Section para cuadros -->
     <section class="hero-paintings">
@@ -238,8 +238,8 @@
         <span>Producto añadido al carrito</span>
     </div>
 
-    <!-- FOOTER inyectado por js/Home.js -->
-    <div id="footer-container"></div>
+ <!-- FOOTER cargado por PHP -->
+  <?php include __DIR__ . '/partials/footer.php'; ?>
 
     <script src="js/cuadros.js"></script>
     <script src="js/Home.js"></script>

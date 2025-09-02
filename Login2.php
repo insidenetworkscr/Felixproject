@@ -19,7 +19,7 @@
 <body>
 
 
-    <a href="Main.html" id="back-home-login" class="back-home-btn" aria-label="Volver al inicio" style="position:fixed;top:18px;left:18px;z-index:9999;display:inline-flex;align-items:center;gap:8px;padding:8px 12px;background:#850200;color:#f2f2f2;text-decoration:none;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.6);font-weight:600;">&larr; Inicio</a>
+    <a href="Main.php" id="back-home-login" class="back-home-btn" aria-label="Volver al inicio" style="position:fixed;top:18px;left:18px;z-index:9999;display:inline-flex;align-items:center;gap:8px;padding:8px 12px;background:#850200;color:#f2f2f2;text-decoration:none;border-radius:8px;box-shadow:0 6px 18px rgba(0,0,0,0.6);font-weight:600;">&larr; Inicio</a>
 
 
     <!-- Login Section -->
@@ -88,7 +88,7 @@
             </div>
 
             <div class="register-link">
-                <p>¿No tienes una cuenta? <a href="register2.html" id="register-now">Regístrate ahora</a></p>
+                <p>¿No tienes una cuenta? <a href="register2.php" id="register-now">Regístrate ahora</a></p>
             </div>
         </div>
     </section>
